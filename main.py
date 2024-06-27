@@ -6,6 +6,7 @@ from app.presentation.websocket import websocket_handler
 from app.infrastructure.redis_repository import RedisRepository
 from app.application.services import ChatService
 
+#TODO : 외부에서 접속 가능하게 하기
 def create_app():
     app = web.Application()
     app['websockets'] = set()

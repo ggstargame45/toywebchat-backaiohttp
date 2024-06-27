@@ -1,6 +1,6 @@
 import redis
 import json
-from aioapp.app.domain.entities import ChatMessage
+from app.domain.entities import ChatMessage
 
 
 class RedisRepository:

@@ -1,6 +1,6 @@
 from datetime import datetime
-from aioapp.app.domain.entities import ChatMessage
-from aioapp.app.infrastructure.redis_repository import RedisRepository
+from app.domain.entities import ChatMessage
+from app.infrastructure.redis_repository import RedisRepository
 
 
 class ChatService:
