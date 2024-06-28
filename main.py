@@ -45,7 +45,7 @@ def get_public_ip():
 if __name__ == '__main__':
     app = create_app()
     ssl_context = ssl.create_default_context(ssl.Purpose.CLIENT_AUTH)
-    ssl_context.load_cert_chain(certfile='../certtest.pem', keyfile='../keytest.pem')
+    ssl_context.load_cert_chain(certfile='./certtest.pem', keyfile='./keytest.pem')
 
     public_ip = get_public_ip()
     if public_ip:
